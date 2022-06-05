@@ -7,7 +7,7 @@ layout: default
 <ul>
 {% for entry in site.pages %}
 {% unless  entry.exclude %}
-<li><a href="{{ entry.url }}">{{ entry.name }}</a></li>
+<li><a href="{{ entry.url | relative_url }}">{{ entry.name }}</a></li>
 {% endunless  %}
 {% endfor %}
 </ul>
