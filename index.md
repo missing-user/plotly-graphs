@@ -2,7 +2,7 @@
 layout: portfolio
 title: Home
 exclude: True
-description: A bunch of projects by Alice, a struggling physics student
+description: A bunch of Plotly graphs
 ---
 
 # Interactive Plots
