@@ -1,0 +1,112 @@
+:root {
+    --fgColor: #222;
+    --bgColor: #fff;
+}
+
+body {
+    padding: 2rem;
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--fgColor);
+    background-color: var(--bgColor);
+    max-width: 60rem;
+    margin: auto;
+}
+
+pre {
+    overflow-x: auto;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    width: 100%;
+}
+
+.sliderscont {
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+}
+
+.homeLink {
+    position: absolute;
+    top: -21px;
+    height: 40px;
+    padding-top: 21px;
+    background-color: var(--fgColor);
+    color: var(--bgColor);
+    border-radius: 9px;
+    transition: transform .2s ease-in-out;
+}
+
+.homeLink:hover, .homeLink:focus {
+    transform: translateY(15px);
+}
+
+.linkBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkBar a {
+    padding-bottom: 1.8rem;
+}
+
+.portfolioElement {}
+
+.portfolioElement h3 {
+    margin-bottom: 0;
+}
+
+.portfolioContent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* responsive */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --fgColor: #fff;
+        --bgColor: #111;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 75%;
+    }
+}
+
+@media (min-width: 768px) {
+    .portfolioContent .column {
+        width: 45%;
+    }
+    .portfolioContent {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1280px) {
+    :root {
+        font-size: 125%;
+    }
+}
+
+@media (min-width: 1820px) {
+    :root {
+        font-size: 150%;
+    }
+}
+
+@media (min-width: 2600px) {
+    :root {
+        font-size: 175%;
+    }
+}

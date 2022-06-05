@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<ul>
+{% for entry in site.pages %}
+{% unless  entry.exclude %}
+<li><a href="{{ entry.url }}">{{ entry.name }}</a></li>
+{% endunless  %}
+{% endfor %}
+</ul>
