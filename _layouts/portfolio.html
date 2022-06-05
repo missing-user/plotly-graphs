@@ -6,7 +6,7 @@ layout: default
 
 <ul>
 {% for entry in site.pages %}
-{% unless  entry.exclude %}
+{% unless  entry.exclude or entry.name == "style.scss" %}
 <li><a href="{{ entry.url | relative_url }}">{{ entry.name }}</a></li>
 {% endunless  %}
 {% endfor %}
